@@ -1,13 +1,10 @@
-#!/usr/bin/python
-""" holds class City"""
+#!/usr/bin/python3
+"""Module for City class."""
+
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """Representation of city """
+    """Class representing a City."""
     state_id = ""
     name = ""
-
-    def __init__(self, *args, **kwargs):
-        """initializes city"""
-        super().__init__(*args, **kwargs)
