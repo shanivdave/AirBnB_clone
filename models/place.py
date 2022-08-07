@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""Module for Place class."""
-
+"""contains Place class"""
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """Class representing a Place."""
+    """temp"""
     city_id = ""
     user_id = ""
     name = ""
@@ -16,4 +15,4 @@ class Place(BaseModel):
     price_by_night = 0
     latitude = 0.0
     longitude = 0.0
-    amenity_ids = []
+    amenity_ids = list()

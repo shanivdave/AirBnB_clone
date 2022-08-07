@@ -23,12 +23,12 @@
     margin-left: auto;
 }
 .price_by_night {
-    color: #ff5a5f;
+    color: black;
     border: 4px solid #ff5a5f;
     border-radius: 50%;
     min-width: 60px;
     height: 60px;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -125,4 +125,13 @@ article .reviews h3 {
 article .reviews p {
     font-size: 12px;
     margin: 5px auto 20px auto;
+}
+@media screen and (max-width: 575px) {
+    .places {
+        width: 100%;
+    }
+    .places article {
+        margin: 20px 0;
+        padding: 10px;
+    }
 }

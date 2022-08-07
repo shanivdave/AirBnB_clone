@@ -1,181 +1,136 @@
-.places {
-    width: 100%;
+div.container section.places {
     display: flex;
-    margin-top: 20px;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
-}
 
-.places h1 {
+}
+div.container section.places h1 {
     font-size: 30px;
-    text-align: left;
-    padding: 15px;
-    flex-basis: 90%;
+    flex: 100%;
 }
-
-.places article {
+div.container section.places article {
     width: 390px;
     padding: 20px;
     margin: 20px;
-    border: #FF5A5F solid 1px;
+    border: 1px #FF5A5F solid;
     border-radius: 4px;
-    grid-row-start: 2;
     display: flex;
-    order: 2;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
 }
-
-.places h2 {
+div.container section.places article h2 {
+    margin-left: auto;
     font-size: 30px;
-    text-align: center;
-    width: 75%;
-    align-content: center;
 }
 
-.price_by_night {
+div.container section.places article div.price_by_night {
     color: #FF5A5F;
-    border: #FF5A5F solid 4px;
-    border-radius: 50%;
-    text-align: center;
+    border: 4px #FF5A5F solid;
+    border-radius: 100%;
     min-width: 60px;
-    width: 80px;
-    height: 80px;
+    height: 60px;
     font-size: 30px;
-    line-height: 70px;
-    margin-bottom: 10px;
-
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.information {
+div.container section.places article div.information {
     height: 80px;
-    border-bottom: #DDDDDD solid 1px;
-    border-top: #DDDDDD solid 1px;
+    border-top: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
     display: flex;
-    font-size: 16px;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
-.max_guest {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+div.container section.places article div.information div.max_guest {
+    width: 100px;
 }
 
-.number_rooms {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+div.container section.places article div.information div.number_rooms {
+    width: 100px;
 }
-
-.number_bathrooms {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+div.container section.places article div.information div.number_bathrooms {
+    width: 100px;
 }
-
-.icon_guest {
-    background-image: url('https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon_group.png');
+div.container section.places article div.information div.max_guest div.guest_icon {
+    background-image: url(../images/icon_group.png);
+    background-position: center;
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;  
 }
 
-.icon_bed {
-    background-image: url('https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon_bed.png');
+div.container section.places article div.information div.number_rooms div.rooms_icon {
+    background-image: url(../images/icon_bed.png);
+    background-position: center;
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;  
 }
 
-.icon_bath {
-    background-image: url('https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon_bath.png');
+div.container section.places article div.information div.number_bathrooms div.bath_icon {
+    background-image: url(../images/icon_bath.png);
+    background-position: center;
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;  
 }
 
-.user {
-    padding: 10px 0;
+div.container section.places article div.user {
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
-
-.places .amenities {
+article .amenities,
+article .reviews {
     margin-top: 40px;
-    text-align: left;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
-
-.places .reviews {
-    margin-top: 40px;
-    text-align: left;
-    list-style-type: none;
-    width: 100%;
-}
-
-.places .amenities h2 {
+article .amenities h2,
+article .reviews h2 {
     font-size: 16px;
-    border-bottom: #DDDDDD solid 1px;
-    text-align: left;
     padding-bottom: 10px;
-    width: 100%;
+    border-bottom: 1px solid #dddddd;
 }
-
-.places .reviews h2 {
-    font-size: 16px;
-    border-bottom: #DDDDDD solid 1px;
-    text-align: left;
-    padding-bottom: 10px;
-    width: 100%;
+article .amenities ul,
+article .reviews ul {
+    padding-left: 0;
 }
-
-.places .amenities ul {
+article .amenities li {
     list-style-type: none;
-    padding-top: 20px;
-}
-
-.places .amenities li {
+    margin: 10px;
     display: flex;
-    text-align: justify;
+    align-items: center;
+    justify-content: start;
 }
-
-.places .reviews ul {
+.icon-tv, .icon-wifi, .icon-pets {
+    background-image: url(../images/icon_tv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+.icon-tv {
+    background-image: url(../images/icon_tv.png);
+}
+.icon-wifi {
+    background-image: url(../images/icon_wifi.png);
+}
+.icon-pets {
+    background-image: url(../images/icon_pets.png);
+}
+article .reviews li {
     list-style-type: none;
-    padding-top: 20px;
 }
-
-.tv_icon {
-    background-image: url("https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon_tv.png");
-    width: 50px;
-    height: 50px;
-}
-
-.wifi_icon {
-    background-image: url("https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon_wifi.png");
-    width: 50px;
-    height: 50px;
-}
-
-.pets_icon {
-    background-image: url("https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon_pets.png");
-    width: 50px;
-    height: 50px;
-}
-
-.places .amenities li p {
-    padding: 20px;
-}
-
-.places .reviews h3 {
+article .reviews h3 {
     font-size: 14px;
-    text-align: left;
-    margin: 10px auto;
+    margin: 5px auto;
+}
+article .reviews p {
+    font-size: 12px;
+    margin: 5px auto 20px auto;
 }
