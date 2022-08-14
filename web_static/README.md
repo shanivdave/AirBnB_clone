@@ -21,5 +21,5 @@ All the icons and logos used for this project are in the [images](./images/) dir
 
 ## Authors
 
-Newton Ombese
-Florence Wangui
+Sarah 
+Alex
